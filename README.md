@@ -32,13 +32,13 @@ Often in complex electronics projects, you need multiple MCUs working together, 
    ┃ ┗ 📜 ESP32_Master.ino
    ┗ 📂 Arduino_Slave
      ┗ 📜 Arduino_Slave.ino
-
-##I2C
+```
+## I2C
 https://github.com/user-attachments/assets/79989435-d73c-475b-9683-951d26a908a4
 
-##UART
+## UART
 https://github.com/user-attachments/assets/0165123b-ea0f-4052-ac86-df5c9e5ef475
 
-##SPI
+## SPI
 https://github.com/user-attachments/assets/c2e2e38f-89a2-4644-a9d0-65cf0564c5b4
 
