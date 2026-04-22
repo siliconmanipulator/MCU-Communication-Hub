@@ -1,18 +1,34 @@
-# 📡 MCU-to-MCU Communication: ESP32 & Arduino
+# 📡 MCU-to-MCU Communication Hub: ESP32 & Arduino
 
-Welcome to this beginner-friendly guide on making microcontrollers talk to each other! 
+Welcome to the complete, beginner-friendly guide to establishing direct communication between different microcontrollers! 
 
-Often, we have multiple MCUs in a project but no screens (like an OLED) to see what's happening. This repository solves that by showing you how to establish direct Master-Slave communication between an ESP32 and an Arduino Uno/Nano, and view the results directly on your computer's Serial Monitor.
+Often in complex electronics projects, you need multiple MCUs working together, but you might not have external displays (like OLEDs) to monitor their interactions. This repository provides highly stable, heavily commented, and "bulletproof" code to establish **Master-Slave communication** between an ESP32 and an Arduino Uno/Nano using three major protocols. All data exchanges can be viewed directly on your computer's Serial Monitor.
 
-We are building a complete series here. Currently, the UART protocol is live, and SPI/I2C will be added very soon!
+## 🛠️ Hardware Requirements
+* 1x ESP32 Development Board (Master)
+* 1x Arduino Uno or Nano (Slave)
+* Jumper Wires
+* 2x Resistors (1kΩ and 2kΩ) for safety
+* 2x USB Data Cables (to view both serial monitors simultaneously)
 
-## 📂 Project Structure
+---
+
+## 📂 Repository Structure
+
 ```text
 📦 MCU-Communication-Hub
- ┣ 📂 1_UART_Communication     <-- (We are here!)
+ ┣ 📂 UART_Communication
  ┃ ┣ 📂 ESP32_Master
  ┃ ┃ ┗ 📜 ESP32_Master.ino
  ┃ ┗ 📂 Arduino_Slave
  ┃   ┗ 📜 Arduino_Slave.ino
- ┣ 📂 2_SPI_Communication      <-- (Coming Soon)
- ┗ 📂 3_I2C_Communication      <-- (Coming Soon)
+ ┣ 📂 I2C_Communication
+ ┃ ┣ 📂 ESP32_Master
+ ┃ ┃ ┗ 📜 ESP32_Master.ino
+ ┃ ┗ 📂 Arduino_Slave
+ ┃   ┗ 📜 Arduino_Slave.ino
+ ┗ 📂 SPI_Communication
+   ┣ 📂 ESP32_Master
+   ┃ ┗ 📜 ESP32_Master.ino
+   ┗ 📂 Arduino_Slave
+     ┗ 📜 Arduino_Slave.ino
